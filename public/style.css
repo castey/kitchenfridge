@@ -104,13 +104,22 @@ button#buyCreditsButton:hover {
     margin: auto;
 }
 
-/* Styles for the number input */
 input[type="number"] {
     margin: 0; /* Resets any default margin */
     width: 90px; /* Width of the input field */
-    border: none; /* Removes the border */
+    border: 1px solid transparent; /* Transparent border */
     background-color: transparent; /* Makes the background transparent */
     color: white; /* Text color for the input */
     font-size: 1.5em; /* Increases the font size of the input */
     text-align: center; /* Centers the text inside the input */
+
+    /* Additional styles for better control of the spinner */
+    -webkit-appearance: textfield; /* Standard appearance with spinners for Webkit browsers */
+    -moz-appearance: textfield; /* Standard appearance with spinners for Mozilla browsers */
+}
+
+/* Style adjustments for the spinner buttons in Webkit browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1; /* Make spinners visible */
 }
