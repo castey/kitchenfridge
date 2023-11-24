@@ -3,7 +3,7 @@ const passport = require('passport');
 const DiscordStrategy = require('passport-discord').Strategy;
 const session = require('express-session');
 const Stripe = require('stripe');
-const stripe = Stripe('sk_test_aOMRsaxO1BKGzH8gVgVrM3lM00e6ecNNYi');
+const stripe = Stripe(process.env.STRIPE_PRIVATE_KEY);
 const database = require('./src/database.js');
 const path = require('path');
 require('dotenv').config();
