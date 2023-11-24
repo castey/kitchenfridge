@@ -106,9 +106,11 @@ button#buyCreditsButton:hover {
 
 input[type="number"] {
     margin: 0; /* Resets any default margin */
-    width: 90px; /* Width of the input field */
+    margin-left: 8px;
+    width: 82px; /* Width of the input field */
+    border-radius: 12px;
     border: 1px solid transparent; /* Transparent border */
-    background-color: transparent; /* Makes the background transparent */
+    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue background */
     color: white; /* Text color for the input */
     font-size: 1.5em; /* Increases the font size of the input */
     text-align: center; /* Centers the text inside the input */
